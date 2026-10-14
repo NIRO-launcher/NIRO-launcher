@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NIRO Launcher - Minecraft Launcher</title>
+  <meta name="description" content="NIRO Launcher: a modern Minecraft Java launcher with Fabric, Forge, Modrinth and a skin changer.">
+  <link rel="icon" type="image/png" href="assets/icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+  <div class="bg-grid" aria-hidden="true"></div>
+
+  <header class="nav">
+    <a class="brand" href="#top" aria-label="NIRO Launcher">
+      <img src="assets/icon.png" alt="" width="38" height="38">
+      <span class="wordmark">NIRO</span>
+    </a>
+    <nav class="links" aria-label="Main">
+      <a href="#top" data-i18n="nav_home">Home</a>
+      <a href="#features" data-i18n="nav_features">Features</a>
+      <a href="#install" data-i18n="nav_install">Install</a>
+      <a href="#faq" data-i18n="nav_faq">FAQ</a>
+    </nav>
+    <div class="nav-right">
+      <button class="lang" id="lang" type="button" aria-label="Language">KA</button>
+      <a class="btn btn-small" data-download href="downloads/NIRO_launcher.exe" download data-i18n="nav_download">Download</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <h1>
+          <span class="grad">NIRO</span>
+          <span>MINECRAFT</span>
+          <span>LAUNCHER</span>
+        </h1>
+        <ul class="ticks">
+          <li data-i18n="tick1">Fabric and Forge support</li>
+          <li data-i18n="tick2">Modrinth built in: mods, packs, shaders</li>
+          <li data-i18n="tick3">Skin changer and capes</li>
+          <li data-i18n="tick4">Multiple versions and profiles</li>
+          <li data-i18n="tick5">Microsoft or offline profile</li>
+          <li data-i18n="tick6">Modern pink and black interface</li>
+        </ul>
+        <div class="cta">
+          <a class="btn btn-big" data-download href="downloads/NIRO_launcher.exe" download id="main-download">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M3 3h8.5v8.5H3zM12.5 3H21v8.5h-8.5zM3 12.5h8.5V21H3zM12.5 12.5H21V21h-8.5z"/></svg>
+            <span data-i18n="download_for">DOWNLOAD FOR WINDOWS</span>
+          </a>
+          <p class="meta"><span id="file-meta">v1.0.0 &middot; 80 MB</span> &middot; <span data-i18n="available">Available for Windows</span></p>
+        </div>
+      </div>
+
+      <div class="hero-shot">
+        <div class="frame">
+          <img src="assets/launcher.png" alt="NIRO Launcher showing the Play page with a player skin, PLAY button and news" width="1213" height="756">
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="section">
+      <h2 data-i18n="features_title">Everything you need to play</h2>
+      <div class="cards">
+        <article class="card"><h3 data-i18n="f1_t">Fabric and Forge</h3><p data-i18n="f1_d">Create a version with the mod loader you want. The loader downloads automatically the first time you press Play.</p></article>
+        <article class="card"><h3 data-i18n="f2_t">Modrinth built in</h3><p data-i18n="f2_d">Search and install mods, resource packs and shaders without leaving the launcher. Required dependencies come along.</p></article>
+        <article class="card"><h3 data-i18n="f3_t">Skin changer</h3><p data-i18n="f3_d">Keep a library of skins, copy a skin by username, switch Classic or Slim, and change capes on Microsoft accounts.</p></article>
+        <article class="card"><h3 data-i18n="f4_t">Versions and profiles</h3><p data-i18n="f4_d">Keep as many versions as you like, each with its own mods, worlds and memory setting.</p></article>
+        <article class="card"><h3 data-i18n="f5_t">Offline or Microsoft</h3><p data-i18n="f5_d">Sign in with Microsoft for online servers, or make an offline profile for local play. The launcher always tells you which one is active.</p></article>
+        <article class="card"><h3 data-i18n="f6_t">Clear logs</h3><p data-i18n="f6_d">Download progress and game logs are one click away, and errors say what went wrong instead of pretending the game started.</p></article>
+      </div>
+    </section>
+
+    <section id="install" class="section">
+      <h2 data-i18n="install_title">Install in three steps</h2>
+      <ol class="steps">
+        <li><b data-i18n="s1_t">Download</b><span data-i18n="s1_d">Click the download button and save NIRO_launcher.exe.</span></li>
+        <li><b data-i18n="s2_t">Run the installer</b><span data-i18n="s2_d">If Windows says "Windows protected your PC", click More info, then Run anyway. Then follow the installer.</span></li>
+        <li><b data-i18n="s3_t">Install Java and play</b><span data-i18n="s3_d">Install Java 21 from adoptium.net if you don't have it, open NIRO, pick a profile and press PLAY.</span></li>
+      </ol>
+    </section>
+
+    <section id="faq" class="section narrow">
+      <h2 data-i18n="faq_title">FAQ</h2>
+      <details><summary data-i18n="q1">Is NIRO Launcher free?</summary><p data-i18n="a1">Yes. You still need your own copy of Minecraft: Java Edition to join online servers.</p></details>
+      <details><summary data-i18n="q2">Why does Windows show a warning?</summary><p data-i18n="a2">The installer is not code-signed yet, so Windows SmartScreen warns about unknown apps. Click More info, then Run anyway.</p></details>
+      <details><summary data-i18n="q3">Can I join online servers with an offline profile?</summary><p data-i18n="a3">No. Offline profiles work for singleplayer and offline-mode servers only. Sign in with a Microsoft account that owns Minecraft: Java Edition to play on online servers.</p></details>
+      <details><summary data-i18n="q4">Do I need Java?</summary><p data-i18n="a4">Yes. Recent Minecraft versions need Java 17 or 21. Install Java 21 from adoptium.net. The launcher tells you if Java is missing or too old.</p></details>
+      <details><summary data-i18n="q5">Which systems are supported?</summary><p data-i18n="a5">Windows for now.</p></details>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>&copy; <span id="year"></span> NIRO Launcher</span>
+    <span data-i18n="legal">Not affiliated with Mojang or Microsoft. Minecraft is a trademark of Mojang AB.</span>
+  </footer>
+
+  <dialog id="dl-dialog" aria-labelledby="dl-title">
+    <h3 id="dl-title" data-i18n="dl_title">Your download has started</h3>
+    <p data-i18n="dl_text">Open NIRO_launcher.exe when it finishes. If Windows shows "Windows protected your PC", click More info, then Run anyway.</p>
+    <p class="fallback"><span data-i18n="dl_fallback">Nothing happened?</span> <a data-download href="downloads/NIRO_launcher.exe" download data-i18n="dl_again">Download again</a></p>
+    <button class="btn btn-small" id="dl-close" type="button" data-i18n="dl_ok">Got it</button>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
